@@ -6,5 +6,8 @@ Update mackerel host status for AWS Elastic Beanstalk
 
 ```sh
 $ bundle install
-$ bundle exec mackerel-eb-status-checker.rb -s [Mackerel Service Name] -r [Mackerel Role Name (optional)] -e [Elastic Beanstalk Environment Name]"
+$ bundle exec mackerel-eb-status-checker.rb \
+    -s [Mackerel Service Name] \
+    -r [Mackerel Role Name (optional)] \
+    -e [Elastic Beanstalk Environment Name]
 ```

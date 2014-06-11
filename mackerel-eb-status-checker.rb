@@ -12,7 +12,7 @@ opts = ARGV.getopts('e:r:s:')
 
 REQUIRED_OPTS.each do |key|
   if opts[key].nil? or opts[key].empty?
-    puts "Usage:\n mackerel-checker.rb -s [Mackerel Service Name] -e [Elastic Beanstalk Environment Name]"
+    puts "Usage:\n mackerel-checker.rb\n -s [Mackerel Service Name]\n -r [Mackerel Role Name (optional)]\n -e [Elastic Beanstalk Environment Name]"
     exit 1
   end
 end
